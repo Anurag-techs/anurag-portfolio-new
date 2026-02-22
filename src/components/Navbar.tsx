@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="/resume.pdf"
-            download="Aditya_Yadav_Resume.pdf"
+            download="Anurag_Singh_Resume.pdf"
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
             style={{ background: "var(--glass-bg)" }}
           >
