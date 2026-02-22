@@ -71,14 +71,30 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden glass-card border-t border-white/5 px-6 py-4 flex flex-col gap-4">
-          {navItems.map((item) => (
-            <button key={item.label} onClick={() => handleNav(item.href)} className="nav-link text-left text-base py-2">
-              {item.label}
-            </button>
-          ))}
-        </div>
-      )}
+  <div className="md:hidden glass-card border-t border-white/5 px-6 py-4 flex flex-col gap-4">
+    
+    {navItems.map((item) => (
+      <button
+        key={item.label}
+        onClick={() => handleNav(item.href)}
+        className="nav-link text-left text-base py-2"
+      >
+        {item.label}
+      </button>
+    ))}
+
+    <a
+      href="/resume.pdf"
+      download="Anurag_Singh_Resume.pdf"
+      className="flex items-center gap-2 px-4 py-2 mt-2 rounded-lg text-sm font-medium"
+      style={{ background: "var(--glass-bg)" }}
+    >
+      <Download size={14} className="text-primary" />
+      <span className="gradient-text">Resume</span>
+    </a>
+
+  </div>
+)}
     </nav>
   );
 };
