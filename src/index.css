@@ -71,17 +71,15 @@
     scroll-behavior: smooth;
   }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: #121212;
-  color: hsl(var(--foreground));
-  min-height: 100vh;
-  overflow-x: hidden;
+body{
+  background:#0f172a;
+  color:#cbd5e1;
+  font-family:'Poppins', sans-serif;
 }
 
-
-  h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
+h1, h2, h3 {
+  font-family:'Orbitron', sans-serif;
+  color:#00e5ff;
 }
 }
 
