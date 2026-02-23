@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/resume.pdf"
+            href="/Anurag_Singh_Resume_2026.pdf"
             download="Anurag_Singh_Resume.pdf"
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
             style={{ background: "var(--glass-bg)" }}
@@ -84,7 +84,7 @@ const Navbar = () => {
     ))}
 
     <a
-      href="/resume.pdf"
+      href="/Anurag_Singh_Resume_2026.pdf"
       download="Anurag_Singh_Resume.pdf"
       className="flex items-center gap-2 px-4 py-2 mt-2 rounded-lg text-sm font-medium"
       style={{ background: "var(--glass-bg)" }}
