@@ -37,7 +37,7 @@ const HeroSection = () => {
 
         {/* Headline */}
         <div className="space-y-3">
-          <h1 className="font-orbitron text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
             <span className="text-primary" style={{ backgroundSize: "200% 200%" }}>
               Anurag Singh
             </span>
