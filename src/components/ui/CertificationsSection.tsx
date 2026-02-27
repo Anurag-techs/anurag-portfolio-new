@@ -1,5 +1,11 @@
 const certifications = [
   {
+    title: "Flipcart Text Embeddings Certification",
+    issuer: "Flipkart",
+    year: "2026",
+    link: "https://drive.google.com/file/d/1eX-03TLruzKCRv2-pUFS_Jph9Z4_vp9s/view?usp=sharing",
+  },
+  {
     title: "Gemini for Google Workspace Certification",
     issuer: "Google",
     year: "2025",
@@ -42,25 +48,28 @@ const CertificationsSection = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {certifications.map((cert, index) => (
           <a
-            key={index}
-            href={cert.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-6 rounded-xl bg-[var(--glass-bg)] backdrop-blur-lg border border-white/10 hover:scale-105 transition duration-300 block"
-          >
-            <h3 className="text-xl font-semibold mb-2">
-              {cert.title}
-            </h3>
-            <p className="text-sm text-gray-400">
-              {cert.issuer}
-            </p>
-            <p className="text-xs text-gray-500 mt-2">
-              {cert.year}
-            </p>
-            <p className="text-primary text-sm mt-4">
-              View Certificate →
-            </p>
-          </a>
+  key={index}
+  href={cert.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group p-6 rounded-xl bg-[var(--glass-bg)] backdrop-blur-lg border border-white/10 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 block"
+>
+  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition">
+    {cert.title}
+  </h3>
+
+  <p className="text-sm text-gray-400">
+    Issued by {cert.issuer}
+  </p>
+
+  <p className="text-xs text-gray-500 mt-2">
+    {cert.year}
+  </p>
+
+  <div className="mt-4 inline-block text-primary text-sm font-medium">
+    View Certificate →
+  </div>
+</a>
         ))}
       </div>
     </section>
