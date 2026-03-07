@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import Tilt from "react-parallax-tilt";
 
 const projects = [
   {
@@ -57,10 +58,11 @@ const ProjectsSection = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
-          {projects.map((project, i) => (
-            <div
+{projects.map((project, i) => (
+  <Tilt key={project.title} glareEnable={true} glareMaxOpacity={0.2}>
+    <div
               key={project.title}
-              className="section-fade glass-card rounded-2xl border border-white/8 overflow-hidden group hover:border-white/15 hover:shadow-glow-mixed transition-all duration-500"
+              className="section-fade glass-card rounded-2xl border border-white/8 overflow-hidden group hover:border-white/15 hover:shadow-glow-mixed transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Card header gradient bar */}
@@ -107,7 +109,8 @@ const ProjectsSection = () => {
 </a>
               </div>
             </div>
-          ))}
+</Tilt>
+))}
         </div>
 
         
