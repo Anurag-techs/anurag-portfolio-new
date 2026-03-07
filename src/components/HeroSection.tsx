@@ -51,11 +51,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Sub-headline */}
-        <div className="glass-card px-5 py-2 rounded-full border border-primary/20 flex items-center gap-2">
-          <Youtube size={16} className="text-primary" />
-          <span className="text-sm font-medium gradient-text">Tech & Innovation Content Creator</span>
-        </div>
+
 
         {/* Intro paragraph */}
         <p className="max-w-2xl text-base md:text-lg text-muted-foreground leading-relaxed font-inter">

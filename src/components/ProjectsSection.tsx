@@ -95,16 +95,16 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* CTA */}
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium transition-all duration-300 hover:gap-3"
-                  style={{ color: project.color }}
-                >
-                  
-                  <ArrowUpRight size={14} />
-                </a>
+<a
+  href={project.live}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-sm font-medium"
+  style={{ color: project.color }}
+>
+  View Project
+  <ArrowUpRight size={14} />
+</a>
               </div>
             </div>
           ))}
