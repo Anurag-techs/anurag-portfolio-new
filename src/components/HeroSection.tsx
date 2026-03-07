@@ -1,4 +1,4 @@
-import { ArrowRight, Youtube, Briefcase, Code2 } from "lucide-react";
+import { ArrowRight, Briefcase, Code2 } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 import { Github, Linkedin } from "lucide-react";
 
