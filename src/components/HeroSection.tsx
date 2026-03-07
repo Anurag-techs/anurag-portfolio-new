@@ -1,5 +1,6 @@
 import { ArrowRight, Youtube, Briefcase, Code2 } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
+import { Github, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
   const scrollTo = (id: string) =>
@@ -24,7 +25,7 @@ const HeroSection = () => {
           <img
             src={profileImg}
             alt="Anurag Singh"
-            className="relative w-48 h-48 rounded-full object-cover border-2 border-transparent profile-glow"
+            className="relative w-48 h-48 rounded-full object-cover border-4 border-indigo-500 shadow-xl shadow-indigo-500/30"
             style={{ borderColor: "rgba(79,70,229,0.4)" }}
           />
         </div>
@@ -63,6 +64,17 @@ const HeroSection = () => {
           (Graduating 2029). Passionate about building modern web applications, exploring AI/ML, and
           creating tech-focused content that inspires innovation.
         </p>
+        <div className="flex gap-5 mt-2">
+<div className="flex gap-4 mt-3">
+  <a href="https://github.com/Anurag-techs" target="_blank">
+    <Github className="hover:text-primary transition" />
+  </a>
+
+  <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+    <Linkedin className="hover:text-primary transition" />
+  </a>
+</div>
+</div>
 
         {/* CTA buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -83,6 +95,13 @@ const HeroSection = () => {
             <Briefcase size={16} className="text-primary" />
             Hire Me
           </button>
+          <a
+  href="/Anurag_Singh_Resume_2026.pdf"
+  download
+  className="px-7 py-3 rounded-xl font-semibold text-sm glass-card border border-primary/30 hover:border-primary/60"
+>
+  Download Resume
+</a>
         </div>
 
         {/* Scroll indicator */}
