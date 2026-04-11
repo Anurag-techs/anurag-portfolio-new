@@ -36,6 +36,24 @@ const certifications = [
     year: "2025",
     link: "https://drive.google.com/file/d/1kJ8F4QiqOOdp3p16RfCOTVBX66doXfCY/view?usp=sharing",
   },
+  {
+    title: "HAck the human signals",
+    issuer: "NxtWave",
+    year: "2026",
+    link: "https://drive.google.com/file/d/1jtPMabqLEhoK-8HApV9aHVb4ztw8UfBu/view?usp=sharing",
+  },
+  {
+    title: "Robotic Arm 101",
+    issuer: "NxtWave",
+    year: "2026",
+    link: "https://drive.google.com/file/d/1ZZ8Qft32d9KdJO1GDlXqR8hYvIxi3cb8/view?usp=sharing",
+  },
+  {
+    title: "Quantc Club NIU",
+    issuer: "NIU",
+    year: "2026",
+    link: "https://drive.google.com/file/d/1P37oMyd9bpt1B5c9HIFAyo3p_hni5HP2/view?usp=sharing",
+  },
 ];
 
 const CertificationsSection = () => {
